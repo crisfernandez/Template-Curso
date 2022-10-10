@@ -1,0 +1,99 @@
+{
+  "@context":{
+    "base": "http://www.example.org/ej2b",
+    "foaf":"http://www.assignment2.es/ej2b",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.ontologies.es/ej2b",
+    "nombreCompleto": "foaf:name",
+    "Edad": "rdfs:label",
+    "Hometown": "rdfs:label",
+    "AlmaMater": "rdfs:label",
+    "Padres:": "rdfs:container",
+    "Profesores":" rdfs:container",
+    "Asignaturas": "rdfs:container",
+    "AsignaturasUni": "http://www.org.upm.es/asignaturas#",
+    "Descripción": "rdfs:comment"
+  },
+  "@id": "http://www.example.org/ej2b/CristinaFernandez",
+  "@type": "foaf: Person",
+  "nombreCompleto": "Cristina Fernández Gómez",
+  "Hometown": "Montecarmelo",
+  "AlmaMater": "Universidad Politécnica de Madrid",
+  "Edad": "19",
+  "Padres": [
+    {
+          "@id": "http://www.example.org/ej2b/Madre",
+    "@type": "foaf:Person",
+    "nombreCompleto": "Elena Gómez Santos"
+  },
+  {
+    "@id": "http://www.example.org/ej2b/Padre",
+    "@type": "foaf:Person",
+    "nombreCompleto": "Raúl Fernández Rey"
+  	}
+    
+  ],
+  "Asignaturas": [
+  	{
+  "@id": "http://www.org.upm.es/asignaturas#/WebSemantica",
+  "@type": "AsignaturasUni",
+  "nombre": "WebSemántica",
+  "Profesores": 
+  	{
+  "@type": "foaf: Person",
+  "@id": "http://www.org.upm.es/asignaturas#/profesores",
+  "nombreCompleto": "Oscar Corcho"
+	},
+	"descripción": "Aprender a analizar datos enlazados publicas en la web y saber comprender grafos de conocimiento."
+	},
+	{
+      "@id:" "http://www.org.upm.es/asignaturas#/Algoritmica",
+      "@type": "AsiganturasUni",
+      "nombre": "Algorítmica",
+      "Profesores":
+      {
+      "@type": "foaf: Person",
+      "@id": "http://www.org.upm.es/asignaturas#/profesores",
+      "nombreCompleto": "Antonio Tabernero"
+    },
+	"descripción": "realizar problemas principalmente algebraicos y relacionados con 		con funciones en Matlab"
+    },
+	{
+      "@id:" "http://www.org.upm.es/asignaturas#/PLN",
+      "@type": "AsiganturasUni",
+      "nombre": "Procesamiento del lenguaje natural",
+      "Profesores":
+      {
+      "@type": "foaf: Person",
+      "@id": "http://www.org.upm.es/asignaturas#/profesores",
+      "nombreCompleto": "Mariano Rico"
+    },
+	"descripción": "Utilizando el lenguaje R analizamos y clasificamos textos"
+    },
+	{
+      "@id:" "http://www.org.upm.es/asignaturas#/IA",
+      "@type": "AsiganturasUni",
+      "nombre": "Inteligencia Artificial",
+      "Profesores":
+      {
+      "@type": "foaf: Person",
+      "@id": "http://www.org.upm.es/asignaturas#/profesores",
+      "nombreCompleto": "María del Carmen Suárez"
+    },
+	"descripción": "Estudiamos lenguajes formales y tecnicas para reproducir como seria 	 el comportamiento de una maquina ante ciertas situaciones"
+	{
+      "@id:" "http://www.org.upm.es/asignaturas#/Representacion",
+      "@type": "AsiganturasUni",
+      "nombre": "Representación e intercambio de datos",
+      "Profesores":
+      {
+      "@type": "foaf: Person",
+      "@id": "http://www.org.upm.es/asignaturas#/profesores",
+      "nombreCompleto": "Antonio Jesús Díaz"
+    },
+	"descripción": "Aprender a analizar y visualizar datos programando en el lenguaje  		de python"
+    }
+  ]
+
+             
+}
